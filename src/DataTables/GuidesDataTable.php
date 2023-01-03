@@ -59,5 +59,4 @@ class GuidesDataTable extends BaseDataTable
             'route' => ['title' => trans('utility-guide::attributes.guide.route'), 'class' => 'col-md-3', 'type' => 'text', 'condition' => 'like', 'active' => true],
         ];
     }
-
 }

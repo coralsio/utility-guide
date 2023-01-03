@@ -43,9 +43,9 @@ class UtilityGuideTest extends TestCase
                     ['intro' => $intros[$intro],
                         'element' => null,
                         'position' => null,
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ];
         $response = $this->post('utilities/guides', $this->guideRequest);
 
@@ -61,7 +61,6 @@ class UtilityGuideTest extends TestCase
             'url' => $this->guide->url,
             'route' => $this->guide->route,
         ]);
-
     }
 
     public function test_utility_guide_edit()
@@ -77,7 +76,6 @@ class UtilityGuideTest extends TestCase
 
     public function test_utility_guide_update()
     {
-
         $this->test_utility_guide_store();
 
         if ($this->guide) {

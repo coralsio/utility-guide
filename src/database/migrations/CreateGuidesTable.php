@@ -29,7 +29,6 @@ class CreateGuidesTable extends Migration
             $table->softDeletes();
             $table->auditable();
             $table->timestamps();
-
         });
     }
 

@@ -2,7 +2,6 @@
 
 namespace Corals\Modules\Utility\Guide\Providers;
 
-
 use Corals\Modules\Utility\Guide\Models\Guide;
 use Corals\Modules\Utility\Guide\Policies\GuidePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
