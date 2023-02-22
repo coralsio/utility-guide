@@ -6,8 +6,6 @@ use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Foundation\AliasLoader;
 
 class UtilityGuideServiceProvider extends BasePackageServiceProvider
 {
@@ -36,7 +34,6 @@ class UtilityGuideServiceProvider extends BasePackageServiceProvider
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
     }
-
 
     public function registerModulesPackages()
     {
