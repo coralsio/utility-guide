@@ -2,16 +2,21 @@
 
 namespace Corals\Modules\Utility\Guide;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
 
-class UtilityGuideServiceProvider extends ServiceProvider
+class UtilityGuideServiceProvider extends BasePackageServiceProvider
 {
-    public function boot()
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-utility-guide';
+
+    public function bootPackage()
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'utility-guide');
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'utility-guide');
@@ -24,18 +29,16 @@ class UtilityGuideServiceProvider extends ServiceProvider
             __DIR__ . '/config/utility-guide.php' => config_path('utility-guide.php'),
             __DIR__ . '/resources/views' => resource_path('resources/views/vendor/utility-guide'),
         ]);
-
-        $this->registerModulesPackages();
     }
 
-    public function register()
+    public function registerPackage()
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
     }
 
 
-    protected function registerModulesPackages()
+    public function registerModulesPackages()
     {
         Modules::addModulesPackages('corals/utility-guide');
     }
