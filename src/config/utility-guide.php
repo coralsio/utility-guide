@@ -28,8 +28,8 @@ return [
                         'label' => 'utility-guide::attributes.guide.position',
                         'status' => 'active',
                         'validation_rules' => '',
-                    ]
-                ]
+                    ],
+                ],
             ],
         ],
     ],

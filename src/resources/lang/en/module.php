@@ -3,6 +3,6 @@
 return [
     'guide' => [
         'title' => 'Guides',
-        'title_singular' => 'Guide'
+        'title_singular' => 'Guide',
     ],
 ];

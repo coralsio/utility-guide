@@ -26,7 +26,6 @@ class GuideRequest extends BaseRequest
      */
     public function rules()
     {
-
         $this->setModel(Guide::class);
         $rules = parent::rules();
 
@@ -61,5 +60,4 @@ class GuideRequest extends BaseRequest
 
         return $rules;
     }
-
 }

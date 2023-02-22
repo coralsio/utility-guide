@@ -19,6 +19,7 @@ class GuidePolicy extends BasePolicy
         if ($user->can('Utility::guide.view')) {
             return true;
         }
+
         return false;
     }
 
@@ -41,6 +42,7 @@ class GuidePolicy extends BasePolicy
         if ($user->can('Utility::guide.update')) {
             return true;
         }
+
         return false;
     }
 
@@ -54,6 +56,7 @@ class GuidePolicy extends BasePolicy
         if ($user->can('Utility::guide.delete')) {
             return true;
         }
+
         return false;
     }
 }

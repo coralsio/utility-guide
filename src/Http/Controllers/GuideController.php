@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Corals\Modules\Utility\Guide\Http\Controllers;
-
 
 use Corals\Foundation\Http\Controllers\BaseController;
 use Corals\Modules\Utility\Guide\DataTables\GuidesDataTable;
@@ -60,7 +58,6 @@ class GuideController extends BaseController
     public function store(GuideRequest $request)
     {
         try {
-
             $guide = $this->guideService->store($request, Guide::class);
 
             flash(trans('Corals::messages.success.created', ['item' => $this->title_singular]))->success();
@@ -132,7 +129,7 @@ class GuideController extends BaseController
      */
     public function getGuideConfigFields(Request $request, $index, Guide $guide)
     {
-        abort_if(!$request->ajax(), 404);
+        abort_if(! $request->ajax(), 404);
 
         $guideConfigFields = $guide->getConfig('guide_config.fields');
 
