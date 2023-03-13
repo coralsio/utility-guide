@@ -29,7 +29,7 @@ class UtilityGuideServiceProvider extends BasePackageServiceProvider
             __DIR__ . '/config/utility-guide.php' => config_path('utility-guide.php'),
             __DIR__ . '/resources/views' => resource_path('resources/views/vendor/utility-guide'),
         ]);
-        \Filters::add_filter('corals_middleware', [\Corals\Utility\Guide\Classes\UtilityGuide::class, 'guideMiddleware'], 8);
+        \Filters::add_filter('corals_middleware', [Classes\UtilityGuide::class, 'guideMiddleware'], 8);
     }
 
     public function registerPackage()
