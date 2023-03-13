@@ -6,7 +6,6 @@ use Corals\Utility\Guide\Middleware\AddGuideAssetsMiddleware;
 
 class UtilityGuide
 {
-
     /**
      * @param array $urlGuideConfig
      * @param $url
@@ -15,7 +14,7 @@ class UtilityGuide
     {
         \JavaScript::put([
             'urlGuideConfig' => $urlGuideConfig,
-            'guideableUrl' => $url
+            'guideableUrl' => $url,
         ]);
 
         \Assets::add(asset('assets/corals/plugins/introJs/js/intro.min.js'));
