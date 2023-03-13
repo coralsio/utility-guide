@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Utility\Facades;
+namespace Corals\Modules\Utility\Guide\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,6 +11,6 @@ class UtilityGuide extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Corals\Utility\Guide\Classes\UtilityGuide::class;
+        return \Corals\Modules\Utility\Guide\Classes\UtilityGuide::class;
     }
 }
