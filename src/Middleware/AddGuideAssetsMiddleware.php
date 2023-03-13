@@ -7,7 +7,6 @@ use Corals\Modules\Utility\Guide\Models\Guide;
 
 class AddGuideAssetsMiddleware
 {
-
     /**
      * @param $request
      * @param Closure $next
@@ -16,13 +15,13 @@ class AddGuideAssetsMiddleware
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (!schemaHasTable('utility_guides')) {
+        if (! schemaHasTable('utility_guides')) {
             return $next($request);
         }
 
         $guideableUrl = $this->guideableUrl($request);
 
-        if (!empty($guideableUrl)) {
+        if (! empty($guideableUrl)) {
             \Utility::includeGuidesAssets($guideableUrl->getProperty('guide_config'), $guideableUrl->url ?? $guideableUrl->route);
         }
 
