@@ -17,25 +17,25 @@ class UtilityGuidePermissionsDatabaseSeeder extends Seeder
         \DB::table('permissions')->insert([
             //Guide
             [
-                'name' => 'Utility::guide.view',
+                'name' => 'UtilityGuide::guide.view',
                 'guard_name' => config('auth.defaults.guard'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
-                'name' => 'Utility::guide.create',
+                'name' => 'UtilityGuide::guide.create',
                 'guard_name' => config('auth.defaults.guard'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
-                'name' => 'Utility::guide.update',
+                'name' => 'UtilityGuide::guide.update',
                 'guard_name' => config('auth.defaults.guard'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
-                'name' => 'Utility::guide.delete',
+                'name' => 'UtilityGuide::guide.delete',
                 'guard_name' => config('auth.defaults.guard'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),

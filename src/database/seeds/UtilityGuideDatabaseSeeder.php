@@ -20,6 +20,6 @@ class UtilityGuideDatabaseSeeder extends Seeder
 
     public function rollback()
     {
-        Permission::where('name', 'like', 'Utility::guide%')->delete();
+        Permission::where('name', 'like', 'UtilityGuide::guide%')->delete();
     }
 }

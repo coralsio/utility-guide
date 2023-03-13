@@ -16,7 +16,7 @@ class GuidePolicy extends BasePolicy
      */
     public function view(User $user)
     {
-        if ($user->can('Utility::guide.view')) {
+        if ($user->can('UtilityGuide::guide.view')) {
             return true;
         }
 
@@ -29,7 +29,7 @@ class GuidePolicy extends BasePolicy
      */
     public function create(User $user)
     {
-        return $user->can('Utility::guide.create');
+        return $user->can('UtilityGuide::guide.create');
     }
 
     /**
@@ -39,7 +39,7 @@ class GuidePolicy extends BasePolicy
      */
     public function update(User $user, Guide $guide)
     {
-        if ($user->can('Utility::guide.update')) {
+        if ($user->can('UtilityGuide::guide.update')) {
             return true;
         }
 
@@ -53,7 +53,7 @@ class GuidePolicy extends BasePolicy
      */
     public function destroy(User $user, Guide $guide)
     {
-        if ($user->can('Utility::guide.delete')) {
+        if ($user->can('UtilityGuide::guide.delete')) {
             return true;
         }
 
