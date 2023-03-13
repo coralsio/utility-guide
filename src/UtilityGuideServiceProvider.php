@@ -6,10 +6,8 @@ use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityAuthServiceProvider;
 use Corals\Modules\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
-use Corals\Utility\Facades\Utility;
 use Corals\Utility\Facades\UtilityGuide;
 use Illuminate\Foundation\AliasLoader;
-
 
 class UtilityGuideServiceProvider extends BasePackageServiceProvider
 {
@@ -32,7 +30,6 @@ class UtilityGuideServiceProvider extends BasePackageServiceProvider
             __DIR__ . '/resources/views' => resource_path('resources/views/vendor/utility-guide'),
         ]);
         \Filters::add_filter('corals_middleware', [\Corals\Utility\Guide\Classes\UtilityGuide::class, 'guideMiddleware'], 8);
-
     }
 
     public function registerPackage()
