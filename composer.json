@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Corals\\Modules\\Utility\\Guide\\": "src"
+            "Corals\\Utility\\Guide\\": "src"
         }
     },
     "autoload-dev": {
@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Corals\\Modules\\Utility\\Guide\\UtilityGuideServiceProvider"
+                "Corals\\Utility\\Guide\\UtilityGuideServiceProvider"
             ]
         }
     },
