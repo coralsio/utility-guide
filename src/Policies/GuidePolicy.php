@@ -3,8 +3,8 @@
 namespace Corals\Utility\Guide\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Utility\Guide\Models\Guide;
 use Corals\User\Models\User;
+use Corals\Utility\Guide\Models\Guide;
 
 class GuidePolicy extends BasePolicy
 {

@@ -3,10 +3,10 @@
 namespace Corals\Utility\Guide;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
-use Corals\Utility\Guide\Providers\UtilityAuthServiceProvider;
-use Corals\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Corals\Utility\Facades\UtilityGuide;
+use Corals\Utility\Guide\Providers\UtilityAuthServiceProvider;
+use Corals\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 
 class UtilityGuideServiceProvider extends BasePackageServiceProvider
