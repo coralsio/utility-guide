@@ -1,8 +1,8 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Classes;
+namespace Corals\Utility\Guide\Classes;
 
-use Corals\Modules\Utility\Guide\Middleware\AddGuideAssetsMiddleware;
+use Corals\Utility\Guide\Middleware\AddGuideAssetsMiddleware;
 
 class UtilityGuide
 {

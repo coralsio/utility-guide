@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Http\Requests;
+namespace Corals\Utility\Guide\Http\Requests;
 
 use Corals\Foundation\Http\Requests\BaseRequest;
-use Corals\Modules\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Models\Guide;
 
 class GuideRequest extends BaseRequest
 {

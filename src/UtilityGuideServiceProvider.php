@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide;
+namespace Corals\Utility\Guide;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
-use Corals\Modules\Utility\Guide\Providers\UtilityAuthServiceProvider;
-use Corals\Modules\Utility\Guide\Providers\UtilityRouteServiceProvider;
+use Corals\Utility\Guide\Providers\UtilityAuthServiceProvider;
+use Corals\Utility\Guide\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Corals\Utility\Facades\UtilityGuide;
 use Illuminate\Foundation\AliasLoader;

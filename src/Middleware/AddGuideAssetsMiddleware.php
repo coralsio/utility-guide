@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Middleware;
+namespace Corals\Utility\Guide\Middleware;
 
 use Closure;
-use Corals\Modules\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Models\Guide;
 
 class AddGuideAssetsMiddleware
 {

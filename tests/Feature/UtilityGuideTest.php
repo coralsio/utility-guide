@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use Corals\Modules\Utility\Guide\Models\Guide;
-use Corals\Modules\Utility\SEO\Facades\SEOItems;
+use Corals\Utility\Guide\Models\Guide;
+use Corals\Utility\SEO\Facades\SEOItems;
 use Corals\User\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;

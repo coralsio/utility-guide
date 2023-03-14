@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Providers;
+namespace Corals\Utility\Guide\Providers;
 
-use Corals\Modules\Utility\Guide\Models\Guide;
-use Corals\Modules\Utility\Guide\Policies\GuidePolicy;
+use Corals\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Policies\GuidePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class UtilityAuthServiceProvider extends ServiceProvider

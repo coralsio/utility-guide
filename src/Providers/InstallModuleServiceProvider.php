@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Providers;
+namespace Corals\Utility\Guide\Providers;
 
 use Corals\Foundation\Providers\BaseInstallModuleServiceProvider;
-use Corals\Modules\Utility\Guide\database\migrations\CreateGuidesTable;
-use Corals\Modules\Utility\Guide\database\seeds\UtilityGuideDatabaseSeeder;
+use Corals\Utility\Guide\database\migrations\CreateGuidesTable;
+use Corals\Utility\Guide\database\seeds\UtilityGuideDatabaseSeeder;
 
 class InstallModuleServiceProvider extends BaseInstallModuleServiceProvider
 {

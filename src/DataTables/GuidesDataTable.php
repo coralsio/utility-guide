@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\DataTables;
+namespace Corals\Utility\Guide\DataTables;
 
 use Corals\Foundation\DataTables\BaseDataTable;
-use Corals\Modules\Utility\Guide\Models\Guide;
-use Corals\Modules\Utility\Guide\Transformers\GuideTransformer;
+use Corals\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Transformers\GuideTransformer;
 use Yajra\DataTables\EloquentDataTable;
 
 class GuidesDataTable extends BaseDataTable

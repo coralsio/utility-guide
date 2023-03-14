@@ -3,7 +3,7 @@
 return [
     'models' => [
         'guide' => [
-            'presenter' => \Corals\Modules\Utility\Guide\Transformers\GuidePresenter::class,
+            'presenter' => \Corals\Utility\Guide\Transformers\GuidePresenter::class,
             'resource_url' => 'utilities/guides',
             'guide_config' => [
                 'title' => 'Guide Config',

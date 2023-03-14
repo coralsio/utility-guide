@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Policies;
+namespace Corals\Utility\Guide\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Modules\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Models\Guide;
 use Corals\User\Models\User;
 
 class GuidePolicy extends BasePolicy

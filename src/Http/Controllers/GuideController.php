@@ -1,12 +1,12 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Http\Controllers;
+namespace Corals\Utility\Guide\Http\Controllers;
 
 use Corals\Foundation\Http\Controllers\BaseController;
-use Corals\Modules\Utility\Guide\DataTables\GuidesDataTable;
-use Corals\Modules\Utility\Guide\Http\Requests\GuideRequest;
-use Corals\Modules\Utility\Guide\Models\Guide;
-use Corals\Modules\Utility\Guide\Services\GuideService;
+use Corals\Utility\Guide\DataTables\GuidesDataTable;
+use Corals\Utility\Guide\Http\Requests\GuideRequest;
+use Corals\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Services\GuideService;
 use Illuminate\Http\Request;
 
 class GuideController extends BaseController

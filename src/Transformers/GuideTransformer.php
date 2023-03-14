@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\Guide\Transformers;
+namespace Corals\Utility\Guide\Transformers;
 
 use Corals\Foundation\Transformers\BaseTransformer;
-use Corals\Modules\Utility\Guide\Models\Guide;
+use Corals\Utility\Guide\Models\Guide;
 
 class GuideTransformer extends BaseTransformer
 {
